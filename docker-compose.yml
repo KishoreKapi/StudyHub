@@ -27,7 +27,13 @@ services:
     depends_on:
       - db
 
+    volumes:
+      - static-data:/app/staticfiles
+      - media-data:/app/media
+
     restart: unless-stopped
 
 volumes:
   postgres-data:
+  static-data:
+  media-data:
