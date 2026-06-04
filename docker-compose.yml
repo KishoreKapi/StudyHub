@@ -28,8 +28,8 @@ services:
       - db
 
     volumes:
-      - static-data:/app/staticfiles
-      - media-data:/app/media
+      - ./staticfiles:/app/staticfiles
+      - ./media:/app/media
 
     restart: unless-stopped
 
